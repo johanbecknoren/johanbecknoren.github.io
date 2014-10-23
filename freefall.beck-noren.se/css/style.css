@@ -1,0 +1,6 @@
+body {
+  background-image:url('../huge_bg.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size : cover;
+}
