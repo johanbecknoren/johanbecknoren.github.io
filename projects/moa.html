@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Portfolio | Johan Beck-Nor&eacuten</title>
+  <meta name="description" content="Portfolio and Information about Johan Beck-Noren, M. Sc. student at LiU, Sweden." />
+  <meta name="keywords" content="johan, beck-noren, mt, medieteknik, norrkoping, computer graphics, portfolio, cv, 2014, datografik, simulering, simulation, skydive, fallskärm, skydiving" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  <!-- Lightbox js och stylesheet -->
+  <script src="../js/lightbox/jquery-1.10.2.min.js"></script>
+  <script src="../js/lightbox/lightbox-2.6.min.js"></script>
+  <link href="../css/lightbox.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="../index.html">Johan<span class="logo_colour">Beck-Nor&eacuten</span></a></h1>
+          <h2>Developer.Student.Skydiver.</h2>
+        </div>
+      </div>
+	  <div id="header_info_me">
+		<p>	<a href="http://www.beck-noren.se">www.beck-noren.se</a><br>
+			johan@beck-noren.se<br>
+			+46 70 77 83 552<br>
+			<a href="http://se.linkedin.com/pub/johan-beck-nor%C3%A9n/4b/5a/760/en" target = "new" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="http://www.linkedin.com/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="Visa Johan Beck-Noréns profil på LinkedIn" style="vertical-align:middle" border="0">Johan Beck-Nor&eacutens profile</span></a></p>
+	  </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li><a href="../index.html">About Me</a></li>
+          <!--<li><a href="about.html">About Me</a></li>-->
+          <li class="selected"><a href="../portfolio.html">Portfolio</a></li>
+          <li><a href="../cv.html">CV</a></li>
+          <li><a href="../education.html">Education</a></li>
+          <!--<li><a href="#">Example Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down One</a></li>
+              <li><a href="#">Drop Down Two</a>
+                <ul>
+                  <li><a href="#">Sub Drop Down One</a></li>
+                  <li><a href="#">Sub Drop Down Two</a></li>
+                  <li><a href="#">Sub Drop Down Three</a></li>
+                  <li><a href="#">Sub Drop Down Four</a></li>
+                  <li><a href="#">Sub Drop Down Five</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down Three</a></li>
+              <li><a href="#">Drop Down Four</a></li>
+              <li><a href="#">Drop Down Five</a></li>
+            </ul>
+          </li>-->
+          <li><a href="../contact.php">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div id="gallery">
+          <ul class="images">
+            <li class="show"><img width="300" height="450" src="../photos/fire_450_300.png" alt="cloth" /></li>
+            <li><img width="300" height="450" src="../photos/cloth_wire_450_300.jpg" alt="campus norrkoping" /></li>
+            <li><img width="300" height="450" src="../photos/moa_fluid_450_300.png" alt="skydive" /></li>
+            <li><img width="300" height="450" src="../photos/diffusion_450_300.jpg" alt="diffusion dof" /></li>
+            <li><img width="300" height="450" src="../photos/teapot_bloom_450_300.jpg" alt="hdr_bloom" /></li>
+      <li><img width="300" height="450" src="../photos/fluid_450_300.jpg" alt="2d fluid sim" /></li>
+      <li><img width="300" height="450" src="../photos/particles_450_300.jpg" alt="particle simulation" /></li>
+          </ul>
+        </div>
+      </div>
+      <div id="content">
+		<h2>Modeling and Animation Labs</h2>
+		<p>The labs for this course covered a variety of areas in modeling, simulation, animation, and computer graphics. Areas covered include mesh data structures, with focus on the half-edge mesh structure, mesh decimation by quadric error metrics, mesh subdivision by Loop's subdivision scheme, implicit surface representation with boolean operations and quadric surfaces, Level sets, and lastly fluid simulation by the Stable Fluids method.
+    </p>
+		<p>A framework was supplied by the course administrators and the labs involved implementing algorithms and schemes by reading technical research papers for the topics covered. All labs were implemented in C++ and uses the OpenGL API for rendering. All labs were completed in collaboration with a fellow student.</p>
+    <p>Lab reports written by me can be found below. They cover the labs on mesh data structures, mesh subdivision, and implicit surface representations.
+
+      <ul>
+          <li><a href="reports/moa_lab1.pdf" target="_new"> Mesh Data Structures</a></li>
+          <li><a href="reports/moa_lab3.pdf" target="new"> Mesh Subdivision</a></li>
+          <li><a href="reports/moa_lab4.pdf" target="new"> Implicit Surfaces</a></li>
+      </ul>
+		<p>
+      <a href="images/quad_dec_bunny_comp_sml.png" rel="lightbox[moa]" title="Mesh decimation using Quadric error metrics. Bunny mesh from left to right with 70 000, 10 000, and 1 000 triangles."><img src="images/quad_dec_bunny_comp_sml_tmb.png"></a>
+      <a href="images/subdiv_cow.png" rel="lightbox[moa]" title="Loop subdivision scheme. Cow mesh from left to right with original mesh, one subdiv, and two subdiv iterations."><img src="images/subdiv_cow_tmb.png"></a>
+      <a href="images/quadrics.png" rel="lightbox[moa]" title="Implicit surfaces described by simple quadric equations."><img src="images/quadrics_tmb.png"></a>
+      <a href="images/moa_fluid_lrg.png" rel="lightbox[moa]" title="Stable Fluids method for fluid simulation, with vorticity confinement."><img src="images/moa_fluid_lrg_tmb.png"></a>
+    </p>
+      </div>
+    </div>
+    <footer>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="../js/jquery.js"></script>
+  <script type="text/javascript" src="../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="../js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>

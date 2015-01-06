@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Portfolio | Johan Beck-Nor&eacuten</title>
+  <meta name="description" content="Portfolio and Information about Johan Beck-Noren, M. Sc. student at LiU, Sweden." />
+  <meta name="keywords" content="johan, beck-noren, mt, medieteknik, norrkoping, computer graphics, portfolio, cv, 2014, datografik, simulering, simulation, skydive, fallskärm, skydiving" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Johan<span class="logo_colour">Beck-Nor&eacuten</span></a></h1>
+          <h2>Developer.Student.Skydiver.</h2>
+        </div>
+      </div>
+	  <div id="header_info_me">
+		<p>	<a href="http://www.beck-noren.se">www.beck-noren.se</a><br>
+			johan@beck-noren.se<br>
+			+46 70 77 83 552<br>
+			<a href="http://se.linkedin.com/pub/johan-beck-nor%C3%A9n/4b/5a/760/en" target = "new" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="http://www.linkedin.com/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="Visa Johan Beck-Noréns profil på LinkedIn" style="vertical-align:middle" border="0">Johan Beck-Nor&eacutens profile</span></a></p>
+	  </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li><a href="index.html">About Me</a></li>
+          <!--<li><a href="about.html">About Me</a></li>-->
+          <li class="selected"><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="education.html">Education</a></li>
+          <!--<li><a href="#">Example Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down One</a></li>
+              <li><a href="#">Drop Down Two</a>
+                <ul>
+                  <li><a href="#">Sub Drop Down One</a></li>
+                  <li><a href="#">Sub Drop Down Two</a></li>
+                  <li><a href="#">Sub Drop Down Three</a></li>
+                  <li><a href="#">Sub Drop Down Four</a></li>
+                  <li><a href="#">Sub Drop Down Five</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down Three</a></li>
+              <li><a href="#">Drop Down Four</a></li>
+              <li><a href="#">Drop Down Five</a></li>
+            </ul>
+          </li>-->
+          <li><a href="contact.php">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div id="gallery">
+          <ul class="images">
+            <li class="show"><img width="300" height="450" src="photos/fire_450_300.png" alt="cloth" /></li>
+            <li><img width="300" height="450" src="photos/cloth_wire_450_300.jpg" alt="campus norrkoping" /></li>
+            <li><img width="300" height="450" src="photos/moa_fluid_450_300.png" alt="skydive" /></li>
+            <li><img width="300" height="450" src="photos/diffusion_450_300.jpg" alt="diffusion dof" /></li>
+            <li><img width="300" height="450" src="photos/teapot_bloom_450_300.jpg" alt="hdr_bloom" /></li>
+      <li><img width="300" height="450" src="photos/fluid_450_300.jpg" alt="2d fluid sim" /></li>
+      <li><img width="300" height="450" src="photos/particles_450_300.jpg" alt="particle simulation" /></li>
+          </ul>
+        </div>
+      </div>
+      <div id="content">
+
+      <!--
+        <h1>Showreel</h1>
+        <p><iframe width="580" height="300" src="//www.youtube.com/embed/ExrwwJSWx9I?vq=hd720" frameborder="0" allowfullscreen></iframe></p>
+      -->
+
+
+    <h1>Portfolio</h1>
+    <table>
+      <tr>
+        <td>
+          <h4>Monte Carlo Raytracer</h4>
+        </td>
+        <td rowspan=3>
+          <a href="projects/monte_carlo.html"><img src="projects/images/monte_carlo_tmb.png" alt="montecarlo"/></a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+      <b>2013</b> | C++ | Rendering equation C++ Light transport
+        </td>
+      </tr>
+      <tr>
+        <td>
+          A stochastic ray tracer using a Monte Carlo integral estimator to approximate the solution to the rendering equation, supporting refracted and reflected rays. The rendering equation is split in direct and indirect illumination parts and uses shadow rays by sampling light sources. Implemented in C++. <a href="projects/monte_carlo.html">Read more...</a>
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <th rowspan=3>
+          <a href="projects/shadows.html"><img src="projects/images/shadows_ssao_tmb.jpg" alt="Soft shadows"/></a>
+        </th>
+        <td>
+          <h4>Soft shadows by Imperfect Shadow maps & SSAO</h4>
+        </td>
+      </tr>
+      <tr>
+        <td>
+      <b>2013</b> | C++  GLSL GLM GLUT | Realtime, Math/algebra
+        </td>
+      </tr>
+      <tr>
+        <td>
+          A project implementing soft shadows for dynamic scenes in real time, using a combination of imperfect shadow maps and screen space ambient occlusion. Main parts implemented by me are the entire SSAO algorithm, as well as the pull-push interpolation algorithm used in the Imperfect Shadow maps method presented.<a href="projects/shadows.html"> Read more...</a>
+        </td>
+      </tr>
+    </table>
+
+		<table>
+      <tr>
+        <td>
+          <h4>Physically Based Simulation of Fire</h4>
+        </td>
+        <td rowspan=3>
+          <a href="projects/fire.html"><img src="projects/images/fire_50_tmb.png" alt="killitwithfire"/></a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+      <b>2013</b> | C++ | Offline simulation, Navier-Stokes, Implicit surfaces
+        </td>
+      </tr>
+      <tr>
+        <td>
+          A physically based simulation of fire, using two seperate incompressible flow equations to simulate the unignited fuel and the hot gaseous products. These equations are coupled together
+          using a ghost fluid method. I implemented the vorticity confinement method used to introduce high frequency details in the simulation, as well as gradient operators and parts of the pressure solving method and boundary conditions.<a href="projects/fire.html"> Read more...</a>  
+        </td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th rowspan=3>
+          <a href="projects/ballbox.html"><img src="projects/images/ballbox_4_tmb.jpg" alt="Ball-to-box"/></a>
+        </th>
+        <td>
+          <h4>Ball-to-Box, a Python game</h4>
+        </td>
+      </tr>
+      <tr>
+        <td>
+      <b>2013</b> | Python2.7 Box2D pyGame
+        </td>
+      </tr>
+      <tr>
+        <td>
+          This is a small game project I did in my spare time with the aim of learning the programming language Python. It uses pygame for the viewport and for drawing primitives and fonts. Box2D, a 2d physics engine, is used for the game physics, collision detection between objects, and interaction with the mouse cursor. <a href="projects/ballbox.html"> Read more...</a>
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td>
+          <h4>Scientific Visualization</h4>
+        </td>
+        <td rowspan=3>
+          <a href="projects/vetviz.html"><img src="projects/images/vetviz_mip_tmb.png" alt="vetviz"/></a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+      <b>2013</b> | C++ | Raycasting Volume rendering Isosurfaces
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Labs included in the course Scientific Visualization held in 2013. Subjects covered include iso surfaces, volume raycasting methods, scalar- and vector data fields. The labs were completed in collaboration with two fellow students.<a href="projects/vetviz.html"> Read more...</a>
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <th rowspan=3>
+          <a href="projects/moa.html"><img src="projects/images/moa_tmb.png" alt="Modeling and Animation"/></a>
+        </th>
+        <td>
+          <h4>Modeling and Animation</h4>
+        </td>
+        
+      </tr>
+      <tr>
+        <td>
+      <b>2013</b> | C++ | Mesh structures, Subdivision, Implicit surfaces
+        </td>
+      </tr>
+      <tr>
+        <td>
+          These are labs completed for the course Modeling and Animation held in the spring of 2013. The labs incluce mesh data structures, mesh decimation, Loop subdivision, implicit surface representations, Level sets, and fluid simulation using the Navier-Stokes stable fluids method. All labs were completed in collaboration with a fellow student.<a href="projects/moa.html"> Read more...</a>
+        </td>
+      </tr>
+    </table>
+
+		<table>
+			<tr>
+				<td>
+					<h4>Simulated Depth of Field on the GPU using the Heat Equation</h4>
+				</td>
+        <td rowspan=3>
+          <a href="projects/dof.html"><img src="projects/images/dof_tmb.jpg" alt="Diffusion DOF"/></a>
+        </td>
+			</tr>
+      <tr>
+        <td>
+      <b>2012</b> | C++ GLSL | Post-processing
+        </td>
+      </tr>
+			<tr>
+				<td>
+					We created an interactive depth of field using simulated heat diffusion for real time computer graphics applications. Using an original RGB rendering along with the depth buffer, we calculate a focus map from user defined camera parameters (aperture, focal depth and focus plane distance). This focus map is then treated as a heat insulator ... <a href="projects/dof.html"> Read more...</a>
+				</td>
+			</tr>
+		</table>
+		
+		<table>
+			<tr>
+        <th rowspan=3>
+          <a href="projects/cloth.html"><img src="projects/images/cloth_tmb.jpg" alt="Interactive cloth simulation"/></a>
+        </th>
+				<td>
+					<h4>Interactive Cloth Simulation</h4>
+				</td>
+			</tr>
+      <tr>
+        <td>
+      <b>2012</b> | C++ GLUT | Realtime simulation
+        </td>
+      </tr>
+			<tr>
+				<td>
+					Together with four friends I implemented a real time cloth simulation using OpenGL and C++. The simulation uses a spring-mass-system consisting of a grid of points connected with a number of springs of different types. The dots positions are approximated using a second order Euler approximation with a fixed time step. The simulation is interactive. I implemented the methods for user interaction, e.g. grabbing, cutting, and tearing of the cloth. <a href="projects/cloth.html"> Read more...</a>
+				</td>
+			</tr>
+		</table>
+
+		<table>
+			<tr>
+				<td>
+					<h4>Visualization of Crimes and Socio-Economic Conditions</h4>
+				</td>
+        <td rowspan=3
+          <a href="projects/infoviz.html"><img src="projects/images/infoviz_tmb.jpg" alt="Information Visualization"/></a>
+        </td>
+			</tr>
+      <tr>
+        <td>
+      <b>2012</b> | C# .NET DirectX | Data mining
+        </td>
+      </tr>
+			<tr>
+				<td>
+					I look close at and visualize any correlation between socio-economic conditions and the amount of reported crimes in Sweden during a period of 10 years. The data was on a per-month and per-municipality basis, and was gathered from a number of government databases... <a href="projects/infoviz.html"> Read more...</a>
+				</td>
+			</tr>
+		</table>
+		<!--
+		<h2>Labs</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
+        <p></p>-->
+      </div>
+    </div>
+    <footer>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>
