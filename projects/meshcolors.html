@@ -74,24 +74,28 @@
         </div>
       </div>
       <div id="content">
-		<h2>Mesh Colors in Frostbite 3, Master's Thesis</h2>
-		<p>For my master's thesis at DICE EA I implemented the Mesh Colors rendering algorithm in Frostbite 3. Mesh Colors seeks to avoid the cons with UV-mapped textures such as discontinuities, unintuitive mapping workflows, waste of texture memory, and unflexibility when changing the mesh topology or vertex positions. It uses the inherent parameterization of the mesh to evenly distribute color samples directly associated with the geometry of the mesh on a per-face basis. Because of this we effectively get hexagonal shaped texels, which is pretty cool :)
+		<h2>Master's Thesis - Mesh Colors in Frostbite 3</h2>
+		<p>For my master's thesis at DICE EA and Frostbite I implemented the Mesh Colors rendering algorithm in Frostbite 3. Mesh Colors seeks to avoid the cons with UV-mapped textures such as discontinuities, unintuitive mapping workflows, waste of texture memory, and unflexibility when changing the mesh topology or vertex positions. It uses the inherent parameterization of the mesh to evenly distribute color samples directly associated with the geometry of the mesh on a per-face basis. Because of this we effectively get hexagonal shaped texels, which is pretty cool :)
     </p>
     <p>
-      The algorithm was implemented in the Frostbite 3 code base as a proof of concept and to be able to compare it to regular UV-mapped textures concerning rendering time, memory footprint, and overall usability. It was written in C++ and HLSL shader code
+      The algorithm was implemented in the Frostbite 3 code base as a proof of concept and to be able to compare it to regular UV-mapped textures concerning rendering time, memory footprint, and overall usability. It was written in C++ and HLSL shader code in the Frostbite engine code base.
     </p>
 
     <p>
-      Thesis paper: <a href="reports/meshcolors_report.pdf" target=_new>Per-face parameterization for texture mapping of geometry in real-time.</a>
+    	Frostbite publication: 
+    	<a href="http://www.frostbite.com/2014/11/per-face-parameterization-for-texture-mapping-of-geometry-in-real-time/" target=_new>Per-face parameterization for Texture Mapping of Geometry in Real-Time</a>
+    <br>
+      Thesis paper: <a href="reports/meshcolors_report.pdf" target=_new>Per-face parameterization for Texture Mapping of Geometry in Real-Time</a>
     </p>
 		
 		<p>
-      <a href="images/ballbox_1.png" rel="lightbox[ballbox]" title="Menu when starting the game"><img src="images/ballbox_1_tmb.jpg"></a>
-      <a href="images/ballbox_2.png" rel="lightbox[ballbox]" title="Game instructions."><img src="images/ballbox_2_tmb.jpg"></a>
-      <a href="images/ballbox_6.png" rel="lightbox[ballbox]" title="Use the mouse to move the blue blocks and get the red ball to the goal."><img src="images/ballbox_6_tmb.jpg"></a>
-      <a href="images/ballbox_4.png" rel="lightbox[ballbox]" ><img src="images/ballbox_4_tmb.jpg"></a>
-      <a href="images/ballbox_5.png" rel="lightbox[ballbox]" title="A Portal-style level."><img src="images/ballbox_5_tmb.jpg"></a>
-      <a href="images/ballbox_3.png" rel="lightbox[ballbox]" title="Introduction screen."><img src="images/ballbox_3_tmb.jpg"></a>
+      <a href="images/meshcolors_head_big_meshcolors.png" rel="lightbox[ballbox]" title="Full resolution mesh colors rendering. No UV-coordinates are used."><img src="images/meshcolors_head_big_meshcolors_tmb.png"></a>
+
+      <a href="images/meshcolors_head_16_linear_mip_comp.png" rel="lightbox[ballbox]" title="Different MIP-levels from lowest to highest using linear filtering."><img src="images/meshcolors_head_16_linear_mip_comp_tmb.png"></a>
+
+      <a href="images/meshcolors_mip_levels_head_comp.png" rel="lightbox[ballbox]" title="Left full resolution, middle highest MIP-level w/ linear filtering, right highest MIP-level w/ nearest filtering. Notice the hexagonal texel shapes when using nearest filtering."><img src="images/meshcolors_mip_levels_head_comp_tmb.png"></a>
+
+      <a href="images/meshcolors_head_nonuniform_face_res.png" rel="lightbox[ballbox]" title="Non-uniform face resolutions, rendered w/ nearest filtering to highlight the difference in resolution between faces."><img src="images/meshcolors_head_nonuniform_face_res_tmb.png"></a>
     </p>
       </div>
     </div>
