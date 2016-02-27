@@ -1,0 +1,5 @@
+html {
+    background-image:    url("../images/freefall/jocke_spain.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+}
