@@ -1,0 +1,33 @@
+[project]
+title = Sheepsplosions
+version = 0.1337
+
+[bootstrap]
+main_collection = /main/main.collectionc
+render = /main/main.renderc
+
+[input]
+game_binding = /input/game.input_bindingc
+gamepads = /main/main.gamepadsc
+
+[display]
+width = 1280
+height = 720
+display_profiles = /main/main.display_profilesc
+variable_dt = 0
+fullscreen = 0
+
+[physics]
+scale = 0.5
+gravity_y = 0
+max_collisions = 128
+
+[script]
+shared_state = 1
+
+[android]
+package = com.sheepsplosions.game
+
+[ios]
+bundle_identifier = sheepsplosions.game
+
