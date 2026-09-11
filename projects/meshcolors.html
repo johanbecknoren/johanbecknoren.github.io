@@ -3,76 +3,53 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mesh Colors in Frostbite 3 | Johan Beck-Norén</title>
   <meta name="description" content="Master's thesis at DICE, implementing the Mesh Colors per-face parameterization for real-time texture mapping in Frostbite 3. By Johan Beck-Norén." />
   <meta name="keywords" content="johan beck-noren, mesh colors, frostbite, per-face parameterization, hlsl, rendering, master's thesis, dice" />
-  <link rel="stylesheet" type="text/css" href="../css/style.css" />
-  <!-- modernizr enables HTML5 elements and feature detects -->
-  <script type="text/javascript" src="../js/modernizr-1.5.min.js"></script>
-  <!-- Lightbox js och stylesheet -->
-  <script src="../js/lightbox/jquery-1.10.2.min.js"></script>
-  <script src="../js/lightbox/lightbox-2.6.min.js"></script>
-  <link href="../css/lightbox.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../css/site.css" />
 </head>
 
 <body>
-  <div id="main">
-    <header>
-      <div id="logo">
-        <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="../index.html">Johan<span class="logo_colour">Beck-Norén</span></a></h1>
-          <h2>Senior Tools Programmer</h2>
-        </div>
-      </div>
-	  <div id="header_info_me">
-		<p>	<a href="https://beck-noren.se">beck-noren.se</a><br>
-			johan.noren@gmail.com<br>
-			<a href="https://www.linkedin.com/in/johan-beck-nor%C3%A9n-76005a4b/" target="_blank">LinkedIn</a></p>
-	  </div>
-      <nav>
-        <ul class="sf-menu" id="nav">
-          <li class="selected"><a href="../index.html">About Me</a></li>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="../index.html">Johan Beck-Norén</a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="../index.html" class="active">About</a></li>
           <li><a href="../cv.html">CV</a></li>
         </ul>
       </nav>
-    </header>
-    <div id="site_content">
-      <div id="content">
-		<h2>Master's Thesis - Mesh Colors in Frostbite 3</h2>
-		<p>For my master's thesis at DICE EA and Frostbite I implemented the Mesh Colors rendering algorithm in Frostbite 3. Mesh Colors seeks to avoid the cons with UV-mapped textures such as discontinuities, unintuitive mapping workflows, waste of texture memory, and unflexibility when changing the mesh topology or vertex positions. It uses the inherent parameterization of the mesh to evenly distribute color samples directly associated with the geometry of the mesh on a per-face basis. Because of this we effectively get hexagonal shaped texels, which is pretty cool :)
-    </p>
-    <p>
-      The algorithm was implemented in the Frostbite 3 code base as a proof of concept and to be able to compare it to regular UV-mapped textures concerning rendering time, memory footprint, and overall usability. It was written in C++ and HLSL shader code in the Frostbite engine code base.
-    </p>
+    </div>
+  </header>
 
-    <p>
-    	Frostbite publication:
-    	<a href="https://www.frostbite.com/2014/11/per-face-parameterization-for-texture-mapping-of-geometry-in-real-time/" target=_new>Per-face parameterization for Texture Mapping of Geometry in Real-Time</a>
-    <br>
-      Thesis paper: <a href="reports/meshcolors_report.pdf" target=_new>Per-face parameterization for Texture Mapping of Geometry in Real-Time</a>
-    </p>
+  <main class="wrap">
+    <h1>Master's Thesis: Mesh Colors in Frostbite 3</h1>
+    <p>For my master's thesis at DICE EA and Frostbite I implemented the Mesh Colors rendering algorithm in Frostbite 3. Mesh Colors seeks to avoid the cons with UV-mapped textures such as discontinuities, unintuitive mapping workflows, waste of texture memory, and unflexibility when changing the mesh topology or vertex positions. It uses the inherent parameterization of the mesh to evenly distribute color samples directly associated with the geometry of the mesh on a per-face basis, which effectively gives hexagonal shaped texels.</p>
+    <p>The algorithm was implemented in the Frostbite 3 code base as a proof of concept and to be able to compare it to regular UV-mapped textures concerning rendering time, memory footprint, and overall usability. It was written in C++ and HLSL shader code in the Frostbite engine code base.</p>
 
-		<p>
-      <a href="images/meshcolors_head_big_meshcolors.png" rel="lightbox[meshcolors]" title="Full resolution mesh colors rendering. No UV-coordinates are used."><img src="images/meshcolors_head_big_meshcolors_tmb.png"></a>
+    <p class="project-report">Frostbite publication: <a href="https://www.frostbite.com/2014/11/per-face-parameterization-for-texture-mapping-of-geometry-in-real-time/" target="_blank">Per-face parameterization for Texture Mapping of Geometry in Real-Time</a></p>
+    <p class="project-report">Thesis paper: <a href="reports/meshcolors_report.pdf" target="_blank">Per-face parameterization for Texture Mapping of Geometry in Real-Time (PDF)</a></p>
 
-      <a href="images/meshcolors_head_16_linear_mip_comp.png" rel="lightbox[meshcolors]" title="Different MIP-levels from lowest to highest using linear filtering."><img src="images/meshcolors_head_16_linear_mip_comp_tmb.png"></a>
+    <div class="project-images">
+      <a href="images/meshcolors_head_big_meshcolors.png" target="_blank" title="Full resolution mesh colors rendering. No UV-coordinates are used."><img src="images/meshcolors_head_big_meshcolors_tmb.png" alt="Full resolution mesh colors rendering" /></a>
+      <a href="images/meshcolors_head_16_linear_mip_comp.png" target="_blank" title="Different MIP-levels from lowest to highest using linear filtering."><img src="images/meshcolors_head_16_linear_mip_comp_tmb.png" alt="Mesh colors MIP levels comparison" /></a>
+      <a href="images/meshcolors_head_nonuniform_face_res.png" target="_blank" title="Non-uniform face resolutions, rendered with nearest filtering to highlight the difference in resolution between faces."><img src="images/meshcolors_head_nonuniform_face_res_tmb.png" alt="Non-uniform face resolution comparison" /></a>
+    </div>
+    <p class="meta">Click an image to view it full size.</p>
+  </main>
 
-      <a href="images/meshcolors_head_nonuniform_face_res.png" rel="lightbox[meshcolors]" title="Non-uniform face resolutions, rendered w/ nearest filtering to highlight the difference in resolution between faces."><img src="images/meshcolors_head_nonuniform_face_res_tmb.png"></a>
-    </p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; Johan Beck-Norén</span>
+      <div class="footer-links">
+        <a href="mailto:johan.noren@gmail.com">johan.noren@gmail.com</a>
+        <a href="https://www.linkedin.com/in/johan-beck-nor%C3%A9n-76005a4b/" target="_blank">LinkedIn</a>
       </div>
     </div>
-    <footer>
-    </footer>
-  </div>
-  <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="../js/jquery.js"></script>
-  <script type="text/javascript" src="../js/jquery.easing-sooper.js"></script>
-  <script type="text/javascript" src="../js/jquery.sooperfish.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('ul.sf-menu').sooperfish();
-    });
-  </script>
+  </footer>
 </body>
 </html>
