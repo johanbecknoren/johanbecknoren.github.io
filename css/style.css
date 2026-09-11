@@ -227,20 +227,11 @@ nav {
   background: #FFF;
 } 
 
-#sidebar_container { 
-  float: right;
-  width: 300px;
-  padding: 0;
-  height: 450px;
-}
-
-#content { 
+#content {
   text-align: left;
-  width: 580px;
+  width: 890px;
   margin: 0 0 0 0;
-  float: left;
   padding: 0 20px 20px 20px;
-  border-right:1px solid;
 }
   
 #content ul { 
@@ -419,32 +410,6 @@ table tr td {
 
 tr.bordered {
   border-bottom: 5px solid rgb(184, 182, 182);
-}
-
-ul.images {
-  width:450px;
-  height:450px;
-  overflow:hidden;
-  position:relative;
-  margin:0;
-  padding:0;
-} 
-
-ul.images li {
-  position:absolute;
-  margin:0;
-  padding:0;
-  left:0;
-  right:0;
-  list-style:none;
-}
- 
-ul.images li.show {
-  z-index:500;  
-}
- 
-ul img {
-  border:none;  
 }
 
 
