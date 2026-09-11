@@ -3,196 +3,165 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CV | Johan Beck-Norén</title>
-  <meta name="description" content="Johan Beck-Norén, Senior Tools Programmer. C++ game engine tools, systems and rendering. CV and selected work." />
-  <meta name="keywords" content="johan beck-noren, tools programmer, c++, game engine, snowdrop, rendering" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <!-- modernizr enables HTML5 elements and feature detects -->
-  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  <meta name="description" content="Johan Beck-Norén, Senior Tools Programmer. C++ and Python game engine tools, systems and rendering. CV and selected work." />
+  <meta name="keywords" content="johan beck-noren, tools programmer, c++, python, game engine, snowdrop, rendering" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/site.css" />
 </head>
 
 <body>
-  <div id="main">
-    <header>
-      <div id="logo">
-        <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index.html">Johan<span class="logo_colour">Beck-Norén</span></a></h1>
-          <h2>Senior Tools Programmer</h2>
-        </div>
-      </div>
-	  <div id="header_info_me">
-		<p>	<a href="https://beck-noren.se">beck-noren.se</a><br>
-			johan.noren@gmail.com<br>
-			<a href="https://www.linkedin.com/in/johan-beck-nor%C3%A9n-76005a4b/" target="_blank">LinkedIn</a></p>
-	  </div>
-      <nav>
-        <ul class="sf-menu" id="nav">
-          <li><a href="index.html">About Me</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li class="selected"><a href="cv.html">CV</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="index.html">Johan Beck-Norén</a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="cv.html" class="active">CV</a></li>
         </ul>
       </nav>
-    </header>
-    <div id="site_content">
-      <div id="content">
-        <h1>CV</h1>
-        <h4>About</h4>
-        <p>I enjoy working in close collaboration with the end-user of the software. Working in cross-functional teams and believe in being open, humble and pragmatic when it comes to problem-solving and communication.</p>
+    </div>
+  </header>
 
-		<h4>Work experience</h4>
-		<table>
-			<tr>
-				<td width = 150 valign = "top">
-					<b>2026-01 - Current</b><br>
-					Massive Entertainment<br>
-					Senior Tools Programmer
-				</td>
-				<td>
-					Part of a small team developing tools in Snowdrop using C++ and Python.
-				</td>
-			</tr>
-			<tr>
-				<td width = 150 valign = "top">
-					<b>2022-03 - 2026-01</b><br>
-					Ubisoft Stockholm<br>
-					Senior Tools Programmer
-				</td>
-				<td>
-					Worked on <a href="https://stockholm.ubisoft.com/scalar/" target="_blank">Ubisoft Scalar</a>, the studio's cloud-native game technology, moving engine systems out into the cloud. C++ and Python.
-				</td>
-			</tr>
-			<tr>
-				<td width = 150 valign = "top">
-					<b>2019-08 - 2022-03</b><br>
-					Ubisoft Stockholm<br>
-					Tools Programmer
-				</td>
-				<td>
-					Tools development in the Snowdrop engine for upcoming AAA titles. Mainly C++.
-				</td>
-			</tr>
-			<tr>
-				<td width = 150 valign = "top">
-					<b>2016-08 - 2019-08</b><br>
-					King - Defold<br>
-					Engine Developer
-				</td>
-				<td>
-					Developing the Defold Engine at King (<a href = "https://www.defold.com" target="_blank">defold.com</a>), a set of tools for creating and shipping games (editor, runtime, IDE, commandline resource pipeline). The engine is fully 3D and is used both in-house at King and externally by other studios. Our core team of nine developers meant great variation in day-to-day tasks: one day helping a game team figure out why a shader was causing performance drops, the next fixing a bug in the audio system. The engine is developed with performance in mind, considering memory footprint, memory access patterns, binary size, and compilation times. Development in C/C++, Lua, Clojure, Python, Java.
-				</td>
-			</tr>
-			<tr>
-				<td width = 150 valign = "top">
-					<b>2014-09 - 2016-08</b><br>
-					Tobii Tech<br>
-					Software Developer
-				</td>
-				<td>
-					Tracking your eyes in real-time at Tobii! I worked with developing the EyeX Engine where we make smart decisions on where YOU are really looking. Development in C# .NET and C++.
-				</td>
-			</tr>
-			<tr>
-				<td width = 150 valign = "top">
-					<b>2014-02 - 2014-07</b><br>
-					DICE<br>
-					Master's Thesis
-				</td>
-				<td>
-					Investigated alternatives to traditional UV-mapping for real-time texturing of meshes. I looked specifically at a per-face parameterization method called Mesh Colors, and did an implementation of the rendering algorithm in the game engine Frostbite 3.
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2">
-					<hr>
-				</td>
-			</tr>
-			<tr>
-				<td width = 150 valign = "top">
-					<b>2007 - 2009</b><br>
-					Swedish Armed Forces<br>
-					EOD/Comms. Technician
-				</td>
-				<td>
-					Together with a fellow soldier, I was responsible mainly for maintenance and repairs of Explosive Ordnance Disposal (EOD) equipment and for training soldiers in the usage of communications equipment (HF/VHF radio, GPS receivers, hard-line communication and satellite phones) for an entire infantry company.
-				</td>
-			</tr>
-		</table>
-		<h4>Education</h4>
-		<table>
-			<tr>
-				<td width = 80 valign = "top">
-					<b>2009 - 2014</b>
-				</td>
-				<td>
-					<b> M. Sc. in Computer Science and Media Technology,</b> Linköping University, Sweden. A degree with emphasis on programming, computer graphics and simulation. I graduated in the summer of 2014.
-				</td>
-			</tr>
-			<tr>
-				<td width = 80 valign = "top">
-					<b>2006 - 2008</b>
-				</td>
-				<td>
-					<b>Swedish Armed Forces</b>, School of Technology, Halmstad, Sweden. During this period I spent a total of five months in Halmstad taking courses pertaining to my service position, e.g EOD equipment mechanics, radio technology, optics, soldering and weapons mechanics.
-				</td>
-			</tr>
-		</table>
-		<h4>Extra-curricular activities and merits</h4>
-		<table>
-			<tr>
-				<td width = 90 valign = "top">
-					<b>2014</b>
-				</td>
-				<td>
-					Winner of C-awards with the project <a href = "projects/fire.html" target="_blank">Kill it with fire</a>  taking home the category Technical Excellence (<a href="http://www.cawards.se" target=_blank>cawards.se</a>).
-				</td>
-			</tr>
-			<tr>
-				<td width = 90 valign = "top">
-					<b>2012 - Current</b>
-				</td>
-				<td>
-					Skydive instructor at Linköpings Fallskärmsklubb. Teaching others how to safely jump out of planes and having fun while doing it!
-				</td>
-			</tr>
-		</table>
-		<h4>Programming languages and skills</h4>
-		<table align = "center" width = 100% color = #FFFFFF>
-			<tr>
-				<td>
-					<ul>
-						<li>C/C++</li>
-						<li>Python</li>
-						<li>C#</li>
-						<li>Lua</li>
-					</ul>
-				</td>
-				<td>
-					<ul>
-						<li>Game engine tools &amp; pipelines</li>
-						<li>Rendering (OpenGL/DirectX, GLSL/HLSL)</li>
-						<li>Large-scale codebases</li>
-						<li>Linux/Windows</li>
-						<li>Git/Perforce</li>
-					</ul>
-				</td>
-			</tr>
-		</table>
-		<p>References are available upon request.</p>
+  <main class="wrap">
+    <h1>CV</h1>
+    <p>Software developer with extensive experience in C++, low-level systems and tools programming. I enjoy working closely with both programmers and end users to build practical, reliable tools that solve real production problems, and value openness, humility and pragmatism in cross-functional teams.</p>
+
+    <h2>Work experience</h2>
+
+    <div class="cv-entry">
+      <div class="when">2026-01 - Current</div>
+      <div>
+        <div class="where">Massive Entertainment (a Ubisoft studio)</div>
+        <div class="role">Senior Tools Programmer</div>
+        <p class="desc">Creating tools and software in support of a game project currently under development, as part of a small team working in Snowdrop.</p>
+        <ul class="tech-tags"><li>C++</li><li>Python</li><li>Snowdrop</li></ul>
       </div>
     </div>
-    <footer>
-    </footer>
-  </div>
-  <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
-  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('ul.sf-menu').sooperfish();
-    });
-  </script>
+
+    <div class="cv-entry">
+      <div class="when">2022-03 - 2026-01</div>
+      <div>
+        <div class="where">Ubisoft Stockholm</div>
+        <div class="role">Senior Tools Programmer</div>
+        <p class="desc">Part of a team doing in-house R&amp;D on cloud technology, microservices and distribution across content pipelines, graphics and game development, including work on Ubisoft Scalar.</p>
+        <ul class="tech-tags"><li>C++</li><li>Python</li><li>Docker</li><li>USD</li></ul>
+      </div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="when">2019-08 - 2022-03</div>
+      <div>
+        <div class="where">Ubisoft Stockholm</div>
+        <div class="role">Tools Programmer</div>
+        <p class="desc">Tools development in the Snowdrop engine, working closely with non-programmers such as VFX artists, audio specialists and designers to define and build the right tools. Credited as Tools Programmer on <i>Avatar: Frontiers of Pandora</i> (Massive Entertainment).</p>
+        <ul class="tech-tags"><li>C++</li><li>Python</li><li>Git</li><li>Perforce</li><li>CMake</li><li>Conan</li></ul>
+      </div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="when">2016-08 - 2019-08</div>
+      <div>
+        <div class="where">King <a href="https://www.defold.com" target="_blank">(Defold)</a></div>
+        <div class="role">Engine Developer</div>
+        <p class="desc">Developed Defold, an open-source game engine and toolchain used both internally at King and externally by other studios. Worked across editor, runtime, IDE and the command-line resource pipeline. Being part of a small team meant broad responsibility, from performance investigations and engine development to tool support for game teams.</p>
+        <ul class="tech-tags"><li>C/C++</li><li>Lua</li><li>Clojure</li><li>Python</li><li>Java</li></ul>
+      </div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="when">2014-09 - 2016-08</div>
+      <div>
+        <div class="where">Tobii</div>
+        <div class="role">Software Developer</div>
+        <p class="desc">Worked on the EyeX engine, a public API and toolset for real-time eye-tracking on Tobii's consumer-grade trackers, balancing smart filtering and responsiveness with strong runtime performance in demanding use cases such as games.</p>
+        <ul class="tech-tags"><li>C++</li><li>C#</li><li>.NET</li><li>WPF</li></ul>
+      </div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="when">2014-02 - 2014-07</div>
+      <div>
+        <div class="where">DICE</div>
+        <div class="role">Master's Thesis</div>
+        <p class="desc">Investigated alternatives to traditional UV-mapping for real-time texturing of meshes, focusing on a per-face parameterization method called <a href="projects/meshcolors.html">Mesh Colors</a>, including an implementation of the rendering algorithm in Frostbite 3.</p>
+        <ul class="tech-tags"><li>C/C++</li><li>HLSL</li><li>Frostbite</li></ul>
+      </div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="when">2007 - 2009</div>
+      <div>
+        <div class="where">Swedish Armed Forces</div>
+        <div class="role">EOD/Comms. Technician</div>
+        <p class="desc">Together with a fellow soldier, I was responsible mainly for maintenance and repairs of Explosive Ordnance Disposal (EOD) equipment and for training soldiers in the usage of communications equipment (HF/VHF radio, GPS receivers, hard-line communication and satellite phones) for an entire infantry company.</p>
+      </div>
+    </div>
+
+    <h2>Education</h2>
+
+    <div class="cv-entry">
+      <div class="when">2009 - 2014</div>
+      <div>
+        <div class="where">M. Sc. in Computer Science and Media Technology</div>
+        <div class="role">Linköping University, Sweden</div>
+        <p class="desc">A degree with emphasis on programming, computer graphics and simulation. I graduated in the summer of 2014.</p>
+      </div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="when">2006 - 2008</div>
+      <div>
+        <div class="where">Swedish Armed Forces</div>
+        <div class="role">School of Technology, Halmstad, Sweden</div>
+        <p class="desc">Five months of courses pertaining to my service position: EOD equipment mechanics, radio technology, optics, soldering and weapons mechanics.</p>
+      </div>
+    </div>
+
+    <h2>Extra-curricular activities and merits</h2>
+
+    <div class="cv-entry">
+      <div class="when">2014</div>
+      <div class="desc">Winner of C-awards with the project "Kill it with fire", taking home the category Technical Excellence (<a href="http://www.cawards.se" target="_blank">cawards.se</a>).</div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="when">2012 - Current</div>
+      <div class="desc">Skydive instructor at Linköpings Fallskärmsklubb. Teaching others how to safely jump out of planes and having fun while doing it!</div>
+    </div>
+
+    <h2>Programming languages and skills</h2>
+    <div class="skills-grid">
+      <ul>
+        <li>C/C++</li>
+        <li>Python</li>
+        <li>C#</li>
+        <li>Java</li>
+        <li>Lua</li>
+      </ul>
+      <ul>
+        <li>Game engine tools &amp; pipelines</li>
+        <li>Rendering (OpenGL/DirectX, GLSL/HLSL)</li>
+        <li>Large-scale codebases</li>
+        <li>Linux/Windows</li>
+        <li>Git/Perforce</li>
+      </ul>
+    </div>
+
+    <p class="cv-footnote">References are available upon request.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; Johan Beck-Norén</span>
+      <div class="footer-links">
+        <a href="mailto:johan.noren@gmail.com">johan.noren@gmail.com</a>
+        <a href="https://www.linkedin.com/in/johan-beck-nor%C3%A9n-76005a4b/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
