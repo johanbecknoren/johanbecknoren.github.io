@@ -1,7 +1,10 @@
+@charset "UTF-8";
 /* ============================================================
    Johan Beck-Norén — site.css
-   Clean, minimal portfolio theme. Light by default, dark via
-   prefers-color-scheme. No build step, no JS required.
+   Clean, minimal portfolio theme. Follows the OS light/dark
+   setting by default; a header toggle (js/theme.js) can force
+   either theme, overriding the OS setting, via [data-theme] on
+   <html> and localStorage so the choice holds across pages.
    ============================================================ */
 
 :root {
@@ -23,7 +26,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #101318;
     --bg-subtle: #171b22;
     --text: #e7e9ee;
@@ -37,6 +40,21 @@
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.35);
     --shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.35), 0 8px 20px rgba(0, 0, 0, 0.45);
   }
+}
+
+:root[data-theme="dark"] {
+  --bg: #101318;
+  --bg-subtle: #171b22;
+  --text: #e7e9ee;
+  --text-muted: #9aa1ae;
+  --border: #262b34;
+  --accent: #6ea2ff;
+  --accent-hover: #8fb6ff;
+  --accent-soft: #1a2740;
+  --card-bg: #171b22;
+  --card-border: #262b34;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.35), 0 8px 20px rgba(0, 0, 0, 0.45);
 }
 
 * { box-sizing: border-box; }
@@ -107,6 +125,40 @@ p:last-child { margin-bottom: 0; }
 .site-title a { color: inherit; }
 .site-title a:hover { color: var(--accent); text-decoration: none; }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex: none;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-subtle);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1;
+  padding: 0;
+  cursor: pointer;
+}
+.theme-toggle:hover { color: var(--text); border-color: var(--text-muted); }
+.theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.theme-toggle-icon::before { content: "🌙"; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle-icon::before { content: "☀️"; }
+}
+:root[data-theme="dark"] .theme-toggle-icon::before { content: "☀️"; }
+:root[data-theme="light"] .theme-toggle-icon::before { content: "🌙"; }
+
 .site-nav ul {
   list-style: none;
   display: flex;
@@ -170,7 +222,7 @@ p:last-child { margin-bottom: 0; }
 
 /* ---------- Main content ---------- */
 
-main { padding: 8px 0 64px 0; }
+main { padding: 32px 0 64px 0; }
 main::after { content: ""; display: table; clear: both; }
 
 main h2 {
@@ -335,5 +387,5 @@ main h4 {
   body { font-size: 16px; }
   .site-header { padding: 28px 0 20px 0; }
   .hero { padding: 32px 0 4px 0; }
-  main { padding: 4px 0 48px 0; }
+  main { padding: 24px 0 48px 0; }
 }

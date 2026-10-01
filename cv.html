@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <script src="js/theme.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CV | Johan Beck-Norén</title>
   <meta name="description" content="Johan Beck-Norén, Senior Tools Programmer. C++ and Python game engine tools, systems and rendering. CV and selected work." />
@@ -17,12 +18,17 @@
   <header class="site-header">
     <div class="wrap">
       <a class="site-title" href="index.html">Johan Beck-Norén</a>
-      <nav class="site-nav">
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="cv.html" class="active">CV</a></li>
-        </ul>
-      </nav>
+      <div class="header-right">
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="cv.html" class="active">CV</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+        </button>
+      </div>
     </div>
   </header>
 
